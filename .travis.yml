@@ -9,5 +9,5 @@ before_script:
 
 script:
   - phpunit
-  - ./vendor/bin/phpcs --standard=PSR2 ./src/ ./test/
+  - ./vendor/bin/phpcs --standard=PSR2 ./src/ ./tests/
  
