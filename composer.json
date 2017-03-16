@@ -16,7 +16,8 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^6.0",
-        "mockery/mockery": "dev-master"
+        "mockery/mockery": "dev-master",
+        "squizlabs/php_codesniffer": "^2.8"
     },
     "autoload": {
         "psr-4": {
