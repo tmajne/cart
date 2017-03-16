@@ -22,11 +22,13 @@ interface GameRepositoryInterface extends RepositoryInterface
 
     /**
      * @param Game $game
+     * @return void
      */
     public function add(Game $game): void;
 
     /**
      * @param Game $game
+     * @return void
      */
     public function remove(Game $game): void;
 }

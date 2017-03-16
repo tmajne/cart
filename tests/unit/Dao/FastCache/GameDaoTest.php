@@ -4,7 +4,7 @@ namespace Nova\Tests\Unit\Dao\FastCache;
 
 use Nova\Contract\Dao\DaoInterface;
 use Nova\Dao\FastCache\GameDao;
-use Nova\Tests\TestCase; 
+use Nova\Tests\TestCase;
 use Mockery;
 use phpFastCache\Cache\ExtendedCacheItemPoolInterface;
 
@@ -42,7 +42,7 @@ class GameDaoTest extends TestCase
 
         $this->cache->shouldReceive('getItem')
             ->once()
-            ->andReturnUsing(function($key) use ($expectedResult) {
+            ->andReturnUsing(function ($key) use ($expectedResult) {
 
                 $this->assertSame($expectedResult['id'], $key);
 
@@ -67,7 +67,7 @@ class GameDaoTest extends TestCase
 
         $this->cache->shouldReceive('getItem')
             ->once()
-            ->andReturnUsing(function($key) use ($id) {
+            ->andReturnUsing(function ($key) use ($id) {
 
                 $this->assertSame($id, $key);
 

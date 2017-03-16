@@ -10,7 +10,7 @@ trait IdGeneratorTrait
      * Example generator
      * @return string
      */
-    private function generateId(): string 
+    private function generateId(): string
     {
         return uniqid("", true);
     }
