@@ -41,6 +41,8 @@ class Cart implements EntityInterface
 
     /**
      * @param mixed $id
+     *
+     * @return void
      */
     public function setId($id): void
     {
@@ -59,6 +61,7 @@ class Cart implements EntityInterface
      * @param Game $game
      * @param int $count
      * @throws CartItemLimitException
+     * @return void
      */
     public function addItem(Game $game, int $count = 1): void
     {
@@ -76,6 +79,7 @@ class Cart implements EntityInterface
 
     /**
      * @param Game $game
+     * @return void
      */
     public function removeItem(Game $game): void
     {
@@ -86,6 +90,7 @@ class Cart implements EntityInterface
     /**
      * @param Game $game
      * @param int $deltaQuantity
+     * @return void
      */
     public function changeItemQuantity(Game $game, int $deltaQuantity): void
     {
@@ -123,6 +128,7 @@ class Cart implements EntityInterface
 
     /**
      * @param string $currency
+     * @return void
      */
     public function setCurrency(string $currency): void
     {
@@ -139,6 +145,7 @@ class Cart implements EntityInterface
 
     /**
      * @param int $itemsLimit
+     * @return void
      */
     public function setItemsLimit(int $itemsLimit): void
     {
@@ -167,5 +174,3 @@ class Cart implements EntityInterface
         ];
     }
 }
-
-
