@@ -61,7 +61,6 @@ class CartApi
         $cart = $this->cartRepository->get($cartId);
 
         $cart->addItem($game, $count);
-        //$cart->addItem($game);
 
         $this->cartRepository->add($cart);
     }
