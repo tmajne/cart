@@ -117,9 +117,6 @@ class CartRepository implements CartRepositoryInterface
      */
     private function convertEntity(Cart $cart): array
     {
-        $data = [];
-        $data['id'] = $cart->getId();
-
         $items = [];
         foreach ($cart->getItems() as $item) {
             /** @var Game $product */
