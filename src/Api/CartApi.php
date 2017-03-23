@@ -30,7 +30,6 @@ class CartApi
     {
         // For admin ?
         $carts = $this->cartRepository->getAll($page, $limit);
-        print_r($carts);
     }
 
     public function show($id)
@@ -39,8 +38,6 @@ class CartApi
 
         // max 3 products
         // return total price of products
-
-        print_r($cart);
     }
 
     public function create()
@@ -67,7 +64,6 @@ class CartApi
         //$cart->addItem($game);
 
         $this->cartRepository->add($cart);
-        print_r($cart);
     }
 
     public function removeItem($cartId, $gameId, int $count = 0)
