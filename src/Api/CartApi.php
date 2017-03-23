@@ -30,14 +30,15 @@ class CartApi
     {
         // For admin ?
         $carts = $this->cartRepository->getAll($page, $limit);
+        
+        return $carts;
     }
 
     public function show($id)
     {
         $cart = $this->cartRepository->get($id);
 
-        // max 3 products
-        // return total price of products
+        return $cart;
     }
 
     public function create()
